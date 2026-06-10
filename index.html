@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You 🎧</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- INTRO SCREEN -->
+<div id="intro" class="screen active">
+  <h2>Put on your headphones 🎧</h2>
+  <p>I made something for you</p>
+  <button onclick="startExperience()">Begin</button>
+
+  <audio id="bgm1">
+    <source src="firstsight.mp3" type="audio/mp3">
+  </audio>
+</div>
+
+<!-- DIALOGUE -->
+<div id="dialogue" class="screen hidden">
+  <p>Oii gym body</p>
+  <p>Aprom yenna inthe pakkam?</p>
+  <p>Valkai epdi poguthu?</p>
+  <p>Ennaye miss pannure thane hehehe 😂</p>
+
+  <p>Seri I have something special for you..</p>
+  <p>Do you like to see it?</p>
+
+  <button onclick="startImages()">YES OR YES 😌</button>
+</div>
+
+<!-- IMAGES -->
+<div id="gallery" class="screen hidden">
+  <img id="mainImage" src="image1.jpg">
+  <p class="tap">Tap to continue →</p>
+</div>
+
+<!-- AFTER GALLERY TEXT -->
+<div id="afterGallery" class="screen hidden">
+  <p>Crazy how we managed to create so many beautiful memories in such a short time...</p>
+  <p>And honestly?</p>
+  <p>I hope we get to create many more.</p>
+  <p>Unnaku okay thane? 😌</p>
+  <p>Okay thaan.</p>
+  <p>Again... there's no "NO" option for you. 😈</p>
+
+  <button onclick="pickup()">Continue</button>
+</div>
+
+<!-- PICKUP LINE -->
+<div id="pickup" class="screen hidden">
+  <p>Pongal le irukkum milagu..</p>
+  <p>Nee siracha rombe azhagu..</p>
+
+  <button onclick="moodShift()">...</button>
+</div>
+
+<!-- TRANSITION -->
+<div id="shift" class="screen hidden">
+  <h2>Okay... enough smiling.</h2>
+</div>
+
+<!-- ENVELOPE -->
+<div id="envelope" class="screen hidden">
+  <h2>💌</h2>
+  <p>Click to open</p>
+  <button onclick="openLetter()">Open</button>
+
+  <audio id="bgm2">
+    <source src="mundhinam.mp3" type="audio/mp3">
+  </audio>
+</div>
+
+<!-- LETTER -->
+<div id="letter" class="screen hidden">
+  <div class="letter-box">
+
+    <img src="image9.jpg" class="side left">
+
+    <div class="text">
+      <p>Hey Lesh…</p>
+
+      <p>I don’t really know how to start this, so I’ll just keep it simple.</p>
+
+      <p>I made this for you.</p>
+
+      <p>You don’t really notice it, but you’ve been part of a lot of my small happy moments.</p>
+
+      <p>Just talking to you… somehow makes things feel lighter.</p>
+
+      <p>The random conversations, the jokes, the chaos… I think I’ll always remember them in my own way.</p>
+
+      <p>They might seem small, but they stayed with me.</p>
+
+      <p>You matter more than you think.</p>
+
+      <p>Life moves fast. People come and go. But some people leave little footprints in your days without even trying.</p>
+
+      <p>You’re one of them.</p>
+
+      <p>Happy Birthday, Mithilesh ❤️</p>
+
+      <p>I hope today is filled with all the things that make you smile.</p>
+
+      <p>— Sree 🤍</p>
+    </div>
+
+    <img src="image10.jpg" class="side right">
+
+  </div>
+
+  <button onclick="blessing()">Continue</button>
+</div>
+
+<!-- BLESSING -->
+<div id="blessing" class="screen hidden">
+  <p>May Lord Hanuman bless you with strength, peace, and protection in everything you do 🕉️</p>
+  <p>Always guided. Always safe. Always okay.</p>
+
+  <p class="final">Laddu na sweet uhh 😌</p>
+  <p class="final">Nee siracha cute uhh</p>
+
+  <h3>That’s all.</h3>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
